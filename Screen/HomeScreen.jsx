@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, Button, Image, Alert } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
+import { View, Text, Image, Alert, StyleSheet, TouchableOpacity } from 'react-native';
 import useImagePicker from '../hooks/useImagePicker';
 import sendImageToApi from '../services/apiService';
 
 const HomeScreen = () => {
   const { imageUri, handleSelectImage, handleTakePhoto } = useImagePicker();
-  const [selectedPlant, setSelectedPlant] = useState('plant1');
+  const [selectedPlant, setSelectedPlant] = useState(null);
   const [prediction, setPrediction] = useState(null);
   const [confidence, setConfidence] = useState(null);
 
@@ -20,37 +19,50 @@ const HomeScreen = () => {
     }
   };
 
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 20 }}>
-        Choose Your Plant
-      </Text>
+  const handlePlantSelect = (plant) => {
+    setSelectedPlant(plant);
+  };
 
-      {/* Plant Picker */}
-      <Picker
-        selectedValue={selectedPlant}
-        style={{ height: 50, width: 200 }}
-        onValueChange={(itemValue) => setSelectedPlant(itemValue)}
-      >
-        <Picker.Item label="Plant 1" value="plant1" />
-        <Picker.Item label="Plant 2" value="plant2" />
-        <Picker.Item label="Plant 3" value="plant3" />
-      </Picker>
+  return (
+    <View style={styles.container}>
+      <Text style={styles.headerText}>Choose Your Plant</Text>
+
+      {/* Plant Icons Section */}
+      <View style={styles.plantSelector}>
+        <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('tomato')}>
+          <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
+          <Text style={styles.plantLabel}>Tomato</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('potato')}>
+          <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
+          <Text style={styles.plantLabel}>Potato</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('corn')}>
+          <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
+          <Text style={styles.plantLabel}>Corn</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Display selected plant */}
+      {selectedPlant && <Text style={styles.selectedText}>Selected: {selectedPlant}</Text>}
 
       {/* Image and Buttons */}
       {imageUri && (
-        <Image
-          source={{ uri: imageUri }}
-          style={{ width: 200, height: 200, borderRadius: 10, marginBottom: 20 }}
-        />
+        <Image source={{ uri: imageUri }} style={styles.selectedImage} />
       )}
 
-      <View style={{ flexDirection: 'row', marginBottom: 20 }}>
-        <Button title="Select from Gallery" onPress={handleSelectImage} />
-        <Button title="Take Photo" onPress={handleTakePhoto} />
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={handleSelectImage}>
+          <Text style={styles.buttonText}>Select from Gallery</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleTakePhoto}>
+          <Text style={styles.buttonText}>Take Photo</Text>
+        </TouchableOpacity>
       </View>
 
-      <Button title="Send Image to API" onPress={handleSendImage} />
+      <TouchableOpacity style={styles.button} onPress={handleSendImage}>
+        <Text style={styles.buttonText}>Send Image to API</Text>
+      </TouchableOpacity>
 
       {/* Prediction and Confidence */}
       {prediction && <Text>Prediction: {prediction}</Text>}
@@ -58,5 +70,68 @@ const HomeScreen = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  headerText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  plantSelector: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
+  iconContainer: {
+    alignItems: 'center',
+    marginHorizontal: 10,  // Added space between icons
+  },
+  plantIcon: {
+    width: 80,
+    height: 80,
+    borderRadius: 10,
+  },
+  plantLabel: {
+    marginTop: 5,
+    fontSize: 16,
+    textAlign: 'center',
+  },
+  selectedText: {
+    marginTop: 20,
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  selectedImage: {
+    width: 200,
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 20,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    marginBottom: 20,
+  },
+  button: {
+    backgroundColor: '#4CAF50',  // Custom button background color
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    marginHorizontal: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '40%',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+});
 
 export default HomeScreen;
