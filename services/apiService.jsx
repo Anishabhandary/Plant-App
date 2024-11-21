@@ -14,13 +14,13 @@ const sendImageToApi = async (imageUri, selectedPlant) => {
   
     // Use a different API URL depending on the selected plant
     switch (selectedPlant) {
-      case 'plant1':
+      case 'Tomato':
         apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict';
         break;
-      case 'plant2':
+      case 'Potato':
         apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict';
         break;
-      case 'plant3':
+      case 'Corn':
         apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict';
         break;
       default:
