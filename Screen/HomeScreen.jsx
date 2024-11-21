@@ -3,7 +3,7 @@ import { View, Text, Image, Alert, StyleSheet, TouchableOpacity } from 'react-na
 import useImagePicker from '../hooks/useImagePicker';
 import sendImageToApi from '../services/apiService';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const { imageUri, handleSelectImage, handleTakePhoto } = useImagePicker();
   const [selectedPlant, setSelectedPlant] = useState(null);
   const [prediction, setPrediction] = useState(null);
@@ -14,6 +14,13 @@ const HomeScreen = () => {
       const { prediction, confidence } = await sendImageToApi(imageUri, selectedPlant);
       setPrediction(prediction);
       setConfidence(confidence);
+
+      // Navigate to the DiagnosisTreatmentScreen after predicting the disease
+      navigation.navigate('DiagnosisTreatment', {
+        imageUri: imageUri,
+        prediction: prediction,
+        selectedPlant: selectedPlant,
+      });
     } catch (error) {
       Alert.alert('Error', error.message);
     }
@@ -65,8 +72,8 @@ const HomeScreen = () => {
       </TouchableOpacity>
 
       {/* Prediction and Confidence */}
-      {prediction && <Text>Prediction: {prediction}</Text>}
-      {confidence && <Text>Confidence: {confidence}%</Text>}
+      {/* {prediction && <Text>Prediction: {prediction}</Text>}
+      {confidence && <Text>Confidence: {confidence}%</Text>} */}
     </View>
   );
 };

@@ -1,36 +1,42 @@
-// import { StatusBar } from 'expo-status-bar';
-// import { ScrollView, StyleSheet, Text, View } from 'react-native';
+// import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// import BottomTabNavigator from './Navigations/BottomTabNavigator';
 
-
-// export default function App() {
+// const App = () => {
 //   return (
-//     <View>
-//       <Text>Plant App</Text>
-//     </View>
+//     <NavigationContainer>
+//       <BottomTabNavigator />
+//     </NavigationContainer>
 //   );
-// }
+// };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     backgroundColor: '#1f992f',
-//   },
-//   name: {
-//     fontSize: 50,
-//   },
-  
-// });
-
+// export default App;
 
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import BottomTabNavigator from './Navigations/BottomTabNavigator';
+import { createStackNavigator } from '@react-navigation/stack';
+import DiagnosisTreatmentScreen from './Screen/DiagnosisTreatmentScreen'; // Ensure it's imported
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <BottomTabNavigator />
+      <Stack.Navigator initialRouteName="Tabs">
+        <Stack.Screen
+          name="Tabs"
+          component={BottomTabNavigator} // Bottom tabs for main screens
+          options={{ headerShown: false }} // Hides the header for bottom tab navigation
+        />
+        <Stack.Screen
+          name="DiagnosisTreatment"
+          component={DiagnosisTreatmentScreen} // Diagnosis & treatment screen in stack
+        />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 export default App;
+
