@@ -11,9 +11,8 @@ const getTreatmentRecommendation = async (selectedPlant, predictedDisease) => {
 
       // Parse the JSON response
       const data = await response.json();
+      console.log('Parsed Data:', data);
 
-      console.log(response.treatment)
-      console.log(response.duration)
       return {
         treatment: data.treatment,  // An array of treatment steps
         duration: data.duration      // Duration of treatment

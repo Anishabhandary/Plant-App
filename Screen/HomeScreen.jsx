@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, Alert, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, Alert, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import useImagePicker from '../hooks/useImagePicker';
 import sendImageToApi from '../services/apiService';
 
@@ -31,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.scrollContainer}>
       <Text style={styles.headerText}>Choose Your Plant</Text>
 
       {/* Plant Icons Section */}
@@ -54,9 +54,7 @@ const HomeScreen = ({ navigation }) => {
       {selectedPlant && <Text style={styles.selectedText}>Selected: {selectedPlant}</Text>}
 
       {/* Image and Buttons */}
-      {imageUri && (
-        <Image source={{ uri: imageUri }} style={styles.selectedImage} />
-      )}
+      {imageUri && <Image source={{ uri: imageUri }} style={styles.selectedImage} />}
 
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={handleSelectImage}>
@@ -74,13 +72,14 @@ const HomeScreen = ({ navigation }) => {
       {/* Prediction and Confidence */}
       {/* {prediction && <Text>Prediction: {prediction}</Text>}
       {confidence && <Text>Confidence: {confidence}%</Text>} */}
-    </View>
+
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  scrollContainer: {
+    flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
@@ -97,7 +96,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     alignItems: 'center',
-    marginHorizontal: 10,  // Added space between icons
+    marginHorizontal: 10, // Added space between icons
   },
   plantIcon: {
     width: 80,
@@ -125,7 +124,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#4CAF50',  // Custom button background color
+    backgroundColor: '#4CAF50', // Custom button background color
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 10,
