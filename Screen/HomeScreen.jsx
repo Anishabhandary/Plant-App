@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { View, Text, Image, Alert, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import useImagePicker from '../hooks/useImagePicker';
 import sendImageToApi from '../services/apiService';
+import { useTranslation } from 'react-i18next'; // Import i18next hook
 
 const HomeScreen = ({ navigation }) => {
+  const { t } = useTranslation(); // Access translation function
   const { imageUri, handleSelectImage, handleTakePhoto } = useImagePicker();
   const [selectedPlant, setSelectedPlant] = useState(null);
   const [prediction, setPrediction] = useState(null);
@@ -33,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
-      <Text style={styles.headerText}>Choose Your Plant</Text>
+      <Text style={styles.headerText}>{t('choosePlant')}</Text> 
 
       {/* Plant Icons Section */}
       <View style={styles.plantSelector}>
@@ -52,27 +54,27 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       {/* Display selected plant */}
-      {selectedPlant && <Text style={styles.selectedText}>Selected: {selectedPlant}</Text>}
+      {selectedPlant && <Text style={styles.selectedText}>{t('selected')}: {selectedPlant}</Text>} 
 
       {/* Image and Buttons */}
       {imageUri && <Image source={{ uri: imageUri }} style={styles.selectedImage} />}
 
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={handleSelectImage}>
-          <Text style={styles.buttonText}>Select from Gallery</Text>
+          <Text style={styles.buttonText}>{t('selectFromGallery')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleTakePhoto}>
-          <Text style={styles.buttonText}>Take Photo</Text>
+          <Text style={styles.buttonText}>{t('takePhoto')}</Text> 
         </TouchableOpacity>
       </View>
 
       <TouchableOpacity style={styles.button} onPress={handleSendImage}>
-        <Text style={styles.buttonText}>Send Image to API</Text>
+        <Text style={styles.buttonText}>{t('sendImageToApi')}</Text> 
       </TouchableOpacity>
 
       {/* Prediction and Confidence */}
-      {/* {prediction && <Text>Prediction: {prediction}</Text>}
-      {confidence && <Text>Confidence: {confidence}%</Text>} */}
+      {/* {prediction && <Text>{t('prediction')}: {prediction}</Text>} */}
+      {/* {confidence && <Text>{t('confidence')}: {confidence}%</Text>} */}
 
     </ScrollView>
   );

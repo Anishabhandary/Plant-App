@@ -1,0 +1,13 @@
+{
+    "choosePlant": "നിങ്ങളുടെ ചെടി തിരഞ്ഞെടുക്കുക",
+    "tomato": "തക്കാളി",
+    "potato": "ഉറുട്ടി",
+    "corn": "പച്ചക്കറി",
+    "selectImage": "ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക",
+    "takePhoto": "ചിത്രം എടുക്കുക",
+    "sendImage": "API-ൽ ചിത്രങ്ങൾ അയയ്ക്കുക",
+    "getTreatmentRecommendation": "ചികിത്സ ശുപാർശ ലഭിക്കുക",
+    "predictedDisease": "പ്രായോഗിക രോഗം",
+    "diagnosisAndTreatment": "നിധാനം & ചികിത്സ"
+  }
+  
