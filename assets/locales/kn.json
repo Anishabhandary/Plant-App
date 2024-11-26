@@ -1,13 +1,14 @@
 {
-    "choosePlant": "ನಿಮ್ಮ ಸಸ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
-    "tomato": "ಟಮಾಟೋ",
-    "potato": "ಆಲೂಗಡ್ಡೆ",
-    "corn": "ಮಕ್ಕಾ",
-    "selectImage": "ಗ್ಯಾಲರಿ‌ನಿಂದ ಆಯ್ಕೆಮಾಡಿ",
-    "takePhoto": "ಊರ фотографии ತೆಗೆಯಿರಿ",
-    "sendImage": "APIಗೆ ಚಿತ್ರವನ್ನು ಕಳುಹಿಸಿ",
-    "getTreatmentRecommendation": "ಚಿಕಿತ್ಸೆಯ ಶಿಫಾರಸು ಪಡೆಯಿರಿ",
-    "predictedDisease": "ಊರ ಕಾಯಿಲೆ",
-    "diagnosisAndTreatment": "ನಿಯಮನೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯ"
-  }
-  
+  "translation":{
+      "choosePlant": "ನಿಮ್ಮ ಸಸ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "tomato": "ಟಮಾಟೋ",
+      "potato": "ಆಲೂಗಡ್ಡೆ",
+      "corn": "ಮಕ್ಕಾ",
+      "selectImage": "ಗ್ಯಾಲರಿ‌ನಿಂದ ಆಯ್ಕೆಮಾಡಿ",
+      "takePhoto": "ಊರ фотографии ತೆಗೆಯಿರಿ",
+      "sendImage": "APIಗೆ ಚಿತ್ರವನ್ನು ಕಳುಹಿಸಿ",
+      "getTreatmentRecommendation": "ಚಿಕಿತ್ಸೆಯ ಶಿಫಾರಸು ಪಡೆಯಿರಿ",
+      "predictedDisease": "ಊರ ಕಾಯಿಲೆ",
+      "diagnosisAndTreatment": "ನಿಯಮನೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯ"
+    }
+}

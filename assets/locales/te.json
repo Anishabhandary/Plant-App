@@ -1,4 +1,5 @@
 {
+  "translation":{
     "choosePlant": "మీ మొక్కను ఎంచుకోండి",
     "tomato": "టమాట",
     "potato": "ఆలూ",
@@ -10,4 +11,5 @@
     "predictedDisease": "భవిష్యత్ వ్యాధి",
     "diagnosisAndTreatment": "రోగ నిర్ధారణ & చికిత్స"
   }
+}
   

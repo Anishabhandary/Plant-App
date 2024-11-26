@@ -1,13 +1,15 @@
 {
-    "choosePlant": "अपना पौधा चुनें",
-    "tomato": "टमाटर",
-    "potato": "आलू",
-    "corn": "मक्का",
-    "selectImage": "गैलरी से चुनें",
-    "takePhoto": "फोटो लें",
-    "sendImage": "एपीआई में चित्र भेजें",
-    "getTreatmentRecommendation": "इलाज की सिफारिश प्राप्त करें",
-    "predictedDisease": "पैडिक्टेड बीमारी",
-    "diagnosisAndTreatment": "निदान और उपचार"
+  "translation":{
+      "choosePlant": "अपना पौधा चुनें",
+      "tomato": "टमाटर",
+      "potato": "आलू",
+      "corn": "मक्का",
+      "selectImage": "गैलरी से चुनें",
+      "takePhoto": "फोटो लें",
+      "sendImage": "एपीआई में चित्र भेजें",
+      "getTreatmentRecommendation": "इलाज की सिफारिश प्राप्त करें",
+      "predictedDisease": "पैडिक्टेड बीमारी",
+      "diagnosisAndTreatment": "निदान और उपचार"
   }
+}
   

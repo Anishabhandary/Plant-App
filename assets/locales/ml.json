@@ -1,4 +1,5 @@
 {
+  "translation":{
     "choosePlant": "നിങ്ങളുടെ ചെടി തിരഞ്ഞെടുക്കുക",
     "tomato": "തക്കാളി",
     "potato": "ഉറുട്ടി",
@@ -10,4 +11,5 @@
     "predictedDisease": "പ്രായോഗിക രോഗം",
     "diagnosisAndTreatment": "നിധാനം & ചികിത്സ"
   }
+}
   

@@ -7,13 +7,14 @@ const LanguageSelectionScreen = ({ navigation }) => {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
-    console.log(i18n.language);
+    console.log("Language Slection Screen Language",i18n.language);
     navigation.navigate('Tabs'); // Navigate to Tabs after language selection
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>{t('choosePlant')}</Text>
+      {/* <Text style={styles.header}>{t('choosePlant')}</Text> */}
+      <Text style={styles.header}>Select Language</Text>
       <Button title="English" onPress={() => changeLanguage('en')} />
       <Button title="हिन्दी" onPress={() => changeLanguage('hi')} />
       <Button title="ಕನ್ನಡ" onPress={() => changeLanguage('kn')} />

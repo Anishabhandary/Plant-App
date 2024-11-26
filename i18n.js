@@ -8,11 +8,11 @@ import ml from './assets/locales/ml.json'; // Malayalam translations
 import te from './assets/locales/te.json'; // Telugu translations
 
 const resources = {
-  en,
-  hi,
-  kn,
-  ml,
-  te,
+  en : en,
+  hi : hi,
+  kn : kn,
+  ml : ml,
+  te : te,
 };
 
 // Fallback language if no match is found

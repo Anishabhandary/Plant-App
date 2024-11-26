@@ -5,11 +5,14 @@ import sendImageToApi from '../services/apiService';
 import { useTranslation } from 'react-i18next'; // Import i18next hook
 
 const HomeScreen = ({ navigation }) => {
-  const { t } = useTranslation(); // Access translation function
+  const { t, i18n } = useTranslation(); // Access translation function
   const { imageUri, handleSelectImage, handleTakePhoto } = useImagePicker();
   const [selectedPlant, setSelectedPlant] = useState(null);
   const [prediction, setPrediction] = useState(null);
   const [confidence, setConfidence] = useState(null);
+
+  console.log("Home Screen Language",i18n.language);//not needed
+  console.log("HomeScreen", t('corn'))
 
   const handleSendImage = async () => {
     try {

@@ -1,13 +1,15 @@
 {
-    "choosePlant": "Choose Your Plant",
-    "tomato": "Tomato",
-    "potato": "Potato",
-    "corn": "Corn",
-    "selectImage": "Select from Gallery",
-    "takePhoto": "Take Photo",
-    "sendImage": "Send Image to API",
-    "getTreatmentRecommendation": "Get Treatment Recommendation",
-    "predictedDisease": "Predicted Disease",
-    "diagnosisAndTreatment": "Diagnosis and Treatment"
+  "translation":{
+      "choosePlant": "Choose Your Plant",
+      "tomato": "Tomato",
+      "potato": "Potato",
+      "corn": "Corn",
+      "selectImage": "Select from Gallery",
+      "takePhoto": "Take Photo",
+      "sendImage": "Send Image to API",
+      "getTreatmentRecommendation": "Get Treatment Recommendation",
+      "predictedDisease": "Predicted Disease",
+      "diagnosisAndTreatment": "Diagnosis and Treatment"
   }
+}
   
