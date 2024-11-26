@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView, Alert } fr
 import getTreatmentRecommendation from '../services/treatmentService';
 
 const DiagnosisTreatmentScreen = ({ route }) => {
-  const { imageUri, prediction, selectedPlant } = route.params; // Get image, prediction, and selected plant from navigation props
+  const { imageUri, prediction, confidence, selectedPlant } = route.params; // Get image, prediction, and selected plant from navigation props
   const [treatmentRecommendations, setTreatmentRecommendations] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -29,6 +29,14 @@ const DiagnosisTreatmentScreen = ({ route }) => {
       {/* Display the selected image and predicted disease */}
       {imageUri && <Image source={{ uri: imageUri }} style={styles.selectedImage} />}
       {prediction && <Text style={styles.predictionText}>Predicted Disease: {prediction}</Text>}
+      {confidence && <Text style={styles.predictionText}>Confidence Value: {confidence}</Text>}
+
+       {/* Show a message if confidence is less than 70% */}
+       {confidence && confidence < 70 && (
+        <Text style={styles.warningText}>
+          Confidence is low. Please take a clearer image for accurate results.
+        </Text>
+      )}
 
       {/* Button to fetch treatment recommendation */}
       <TouchableOpacity style={styles.button} onPress={handleGetTreatmentRecommendation} disabled={isLoading}>

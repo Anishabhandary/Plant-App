@@ -19,6 +19,7 @@ const HomeScreen = ({ navigation }) => {
       navigation.navigate('DiagnosisTreatment', {
         imageUri: imageUri,
         prediction: prediction,
+        confidence: confidence,
         selectedPlant: selectedPlant,
       });
     } catch (error) {
