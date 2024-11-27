@@ -1,15 +1,30 @@
 {
-  "translation":{
-      "choosePlant": "Choose Your Plant",
-      "tomato": "Tomato",
-      "potato": "Potato",
-      "corn": "Corn",
-      "selectFromGallery": "Select from Gallery",
-      "takePhoto": "Take Photo",
-      "sendImageToApi": "Send Image to API",
-      "getTreatmentRecommendation": "Get Treatment Recommendation",
-      "predictedDisease": "Predicted Disease",
-      "diagnosisAndTreatment": "Diagnosis and Treatment"
+  "translation": {
+    "choosePlant": "Choose your plant",
+    "tomato": "Tomato",
+    "potato": "Potato",
+    "corn": "Corn",
+    "selectFromGallery": "Select from Gallery",
+    "takePhoto": "Take Photo",
+    "sendImageToApi": "Send Image to API",
+    "getTreatmentRecommendation": "Get Treatment Recommendation",
+    "predictedDisease": "Predicted Disease",
+    "diagnosisAndTreatment": "Diagnosis and Treatment",
+    "InvalidPlantSelected": "Select a plant",
+    "selectedPlant": "Selected Plant",
+    "confidenceValue": "Confidence Value",
+    "recommendedTreatments": "Recommended Treatments",
+    "treatmentDuration": "Treatment Duration",
+    "failedToGetTreatmentRecommendation": "Failed to get treatment recommendations",
+    "Tomato___Bacterial_spot": "Tomato Bacterial Spot",
+    "Tomato___Early_blight": "Tomato Early Blight",
+    "Tomato___Late_blight": "Tomato Late Blight",
+    "Tomato___Leaf_Mold": "Tomato Leaf Mold",
+    "Tomato___Septoria_leaf_spot": "Tomato Septoria Leaf Spot",
+    "Tomato___Spider_mites_Two_spotted_spider_mite": "Tomato Spider Mites",
+    "Tomato___Target_Spot": "Tomato Target Spot",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "Tomato Yellow Leaf Curl Virus",
+    "Tomato___Tomato_mosaic_virus": "Tomato Mosaic Virus",
+    "Tomato___healthy": "Healthy Tomato"
   }
 }
-  

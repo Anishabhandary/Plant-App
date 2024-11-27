@@ -21,7 +21,7 @@ const DiagnosisTreatmentScreen = ({ route }) => {
       console.log(treatment)
       console.log(duration)
     } catch (error) {
-      Alert.alert('Error', 'Failed to get treatment recommendations.');
+      Alert.alert('Error', t('failedToGetTreatmentRecommendation'));
     } finally {
       setIsLoading(false);
     }
@@ -120,10 +120,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 15,
     fontStyle: 'italic',
+    lineHeight:30
   },
   recommendationText: {
     fontSize: 16,
     marginBottom: 5,
+    lineHeight:30
   },
 });
 

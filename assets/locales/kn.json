@@ -15,6 +15,7 @@
       "confidenceValue":"ಖಚಿತತೆಯ ಮಟ್ಟ",
       "recommendedTreatments":"ಸೂಚಿತ ಚಿಕಿತ್ಸೆಗಳು",
       "treatmentDuration":"ಚಿಕಿತ್ಸೆಯ ಅವಧಿ",
+      "failedToGetTreatmentRecommendation":"ಚಿಕಿತ್ಸಾ ಸಲಹೆಗಳನ್ನು ತೋರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
       "Tomato___Bacterial_spot": "ಟೊಮ್ಯಾಟೊ ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಸ್ಪಾಟ್",
       "Tomato___Early_blight": "ಟೊಮ್ಯಾಟೊ ಆರಂಭಿಕ ಬ್ಲೈಟ್",
       "Tomato___Late_blight": "ಟೊಮ್ಯಾಟೊ ತಡವಾದ ಬ್ಲೈಟ್",

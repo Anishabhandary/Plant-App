@@ -47,11 +47,11 @@ const HomeScreen = ({ navigation }) => {
           <Text style={styles.plantLabel}>{t('tomato')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('potato')}>
-          <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
+          <Image source={require('../assets/Images/Potato.png')} style={styles.plantIcon} />
           <Text style={styles.plantLabel}>{t('potato')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('corn')}>
-          <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
+          <Image source={require('../assets/Images/Corn.png')} style={styles.plantIcon} />
           <Text style={styles.plantLabel}>{t('corn')}</Text>
         </TouchableOpacity>
       </View>
@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 18,
     fontWeight: 'bold',
+    lineHeight:30
   },
   selectedImage: {
     width: 200,

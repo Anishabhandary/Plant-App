@@ -1,15 +1,30 @@
 {
-  "translation":{
+  "translation": {
     "choosePlant": "మీ మొక్కను ఎంచుకోండి",
-    "tomato": "టమాట",
-    "potato": "ఆలూ",
-    "corn": "పట్టిన తోట",
+    "tomato": "టమోటా",
+    "potato": "బంగాళాదుంప",
+    "corn": "మొక్కజొన్న",
     "selectFromGallery": "గ్యాలరీ నుండి ఎంచుకోండి",
-    "takePhoto": "ఫోటో తీసుకోండి",
-    "sendImageToApi": "APIకి చిత్రాన్ని పంపండి",
-    "getTreatmentRecommendation": "చికిత్స సిఫారసు పొందండి",
-    "predictedDisease": "భవిష్యత్ వ్యాధి",
-    "diagnosisAndTreatment": "రోగ నిర్ధారణ & చికిత్స"
+    "takePhoto": "ఫోటో తీయండి",
+    "sendImageToApi": "API కి చిత్రాన్ని పంపించండి",
+    "getTreatmentRecommendation": "చికిత్స సూచనను పొందండి",
+    "predictedDisease": "కనుగొనబడిన వ్యాధి",
+    "diagnosisAndTreatment": "రోగనిర్ధారణ మరియు చికిత్స",
+    "InvalidPlantSelected": "ఒక మొక్కను ఎంచుకోండి",
+    "selectedPlant": "ఎంచుకున్న మొక్క",
+    "confidenceValue": "నమ్మక స్థాయి",
+    "recommendedTreatments": "సిఫార్సు చేసిన చికిత్సలు",
+    "treatmentDuration": "చికిత్స వ్యవధి",
+    "failedToGetTreatmentRecommendation": "చికిత్సా సూచనలు పొందలేకపోయాము",
+    "Tomato___Bacterial_spot": "టమాటో బ్యాక్టీరియా మచ్చ",
+    "Tomato___Early_blight": "టమాటో ప్రారంభ బ్లైట్",
+    "Tomato___Late_blight": "టమాటో ఆలస్య బ్లైట్",
+    "Tomato___Leaf_Mold": "టమాటో ఆకుపచ్చ",
+    "Tomato___Septoria_leaf_spot": "టమాటో సెప్టోరియా ఆకుల మచ్చ",
+    "Tomato___Spider_mites_Two_spotted_spider_mite": "టమాటో స్సైడర్ మిట్స్",
+    "Tomato___Target_Spot": "టమాటో టార్గెట్ స్పాట్",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "టమాటో పసుపు ఆకుల కర్ల్ వైరస్",
+    "Tomato___Tomato_mosaic_virus": "టమాటో మోసాయిక్ వైరస్",
+    "Tomato___healthy": "ఆరోగ్యకరమైన టమాటో"
   }
 }
-  

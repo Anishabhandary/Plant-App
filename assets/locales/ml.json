@@ -1,15 +1,30 @@
 {
-  "translation":{
-    "choosePlant": "നിങ്ങളുടെ ചെടി തിരഞ്ഞെടുക്കുക",
+  "translation": {
+    "choosePlant": "താങ്കളുടെ ചെടി തിരഞ്ഞെടുക്കുക",
     "tomato": "തക്കാളി",
-    "potato": "ഉറുട്ടി",
-    "corn": "പച്ചക്കറി",
+    "potato": "ഉരുളക്കിഴങ്ങ്",
+    "corn": "മക",
     "selectFromGallery": "ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക",
-    "takePhoto": "ചിത്രം എടുക്കുക",
-    "sendImageToApi": "API-ൽ ചിത്രങ്ങൾ അയയ്ക്കുക",
-    "getTreatmentRecommendation": "ചികിത്സ ശുപാർശ ലഭിക്കുക",
-    "predictedDisease": "പ്രായോഗിക രോഗം",
-    "diagnosisAndTreatment": "നിധാനം & ചികിത്സ"
+    "takePhoto": "ഫോട്ടോ എടുക്കുക",
+    "sendImageToApi": "API-ലേക്ക് ചിത്രം അയയ്ക്കുക",
+    "getTreatmentRecommendation": "ചികിത്സാ ശുപാർശ ലഭിക്കുക",
+    "predictedDisease": "കണ്ടെത്തിയ രോഗം",
+    "diagnosisAndTreatment": "രോഗനിർണയവും ചികിത്സയും",
+    "InvalidPlantSelected": "ഒരു ചെടി തിരഞ്ഞെടുക്കുക",
+    "selectedPlant": "തിരഞ്ഞെടുത്ത ചെടി",
+    "confidenceValue": "ആശ്വാസ നിലവാരം",
+    "recommendedTreatments": "ശുപാർശ ചെയ്യുന്ന ചികിത്സകൾ",
+    "treatmentDuration": "ചികിത്സയുടെ ദൈർഘ്യം",
+    "failedToGetTreatmentRecommendation": "ചികിത്സാ ശുപാർശകൾ ലഭിക്കാൻ കഴിയില്ല",
+    "Tomato___Bacterial_spot": "തക്കാളി ബാക്ടീരിയ സ്പോട്ട്",
+    "Tomato___Early_blight": "തക്കാളി പ്രാരംഭ ബ്ലൈറ്റിൽ",
+    "Tomato___Late_blight": "തക്കാളി വൈകിയ ബ്ലൈറ്റിൽ",
+    "Tomato___Leaf_Mold": "തക്കാളി ഇല മൂൽഡ്",
+    "Tomato___Septoria_leaf_spot": "തക്കാളി സെപ്ടോറിയ ഇല സ്പോട്ട്",
+    "Tomato___Spider_mites_Two_spotted_spider_mite": "തക്കാളി സ്പൈഡർ മൈറ്റുകൾ",
+    "Tomato___Target_Spot": "തക്കാളി ലക്ഷ്യം സ്പോട്ട്",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "തക്കാളി മഞ്ഞ ഇല കർൾ വൈറസ്",
+    "Tomato___Tomato_mosaic_virus": "തക്കാളി മൊസൈക് വൈറസ്",
+    "Tomato___healthy": "ആരോഗ്യകരമായ തക്കാളി"
   }
 }
-  

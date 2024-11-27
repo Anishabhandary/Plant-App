@@ -1,15 +1,30 @@
 {
-  "translation":{
-      "choosePlant": "अपना पौधा चुनें",
-      "tomato": "टमाटर",
-      "potato": "आलू",
-      "corn": "मक्का",
-      "selectFromGallery": "गैलरी से चुनें",
-      "takePhoto": "फोटो लें",
-      "sendImageToApi": "एपीआई में चित्र भेजें",
-      "getTreatmentRecommendation": "इलाज की सिफारिश प्राप्त करें",
-      "predictedDisease": "पैडिक्टेड बीमारी",
-      "diagnosisAndTreatment": "निदान और उपचार"
+  "translation": {
+    "choosePlant": "अपना पौधा चुनें",
+    "tomato": "टमाटर",
+    "potato": "आलू",
+    "corn": "मकई",
+    "selectFromGallery": "गैलरी से चुनें",
+    "takePhoto": "फोटो लें",
+    "sendImageToApi": "API पर छवि भेजें",
+    "getTreatmentRecommendation": "इलाज की सिफारिश प्राप्त करें",
+    "predictedDisease": "पाया गया रोग",
+    "diagnosisAndTreatment": "रोग निदान और उपचार",
+    "InvalidPlantSelected": "एक पौधा चुनें",
+    "selectedPlant": "चयनित पौधा",
+    "confidenceValue": "विश्वास स्तर",
+    "recommendedTreatments": "अनुशंसित उपचार",
+    "treatmentDuration": "उपचार अवधि",
+    "failedToGetTreatmentRecommendation": "इलाज की सिफारिश प्राप्त करने में विफल",
+    "Tomato___Bacterial_spot": "टमाटर बैक्टीरियल स्पॉट",
+    "Tomato___Early_blight": "टमाटर प्रारंभिक झुलसा",
+    "Tomato___Late_blight": "टमाटर देर से झुलसा",
+    "Tomato___Leaf_Mold": "टमाटर पत्ता फफूंद",
+    "Tomato___Septoria_leaf_spot": "टमाटर सेप्टोरिया पत्ता धब्बा",
+    "Tomato___Spider_mites_Two_spotted_spider_mite": "टमाटर मकड़ी के कीड़े",
+    "Tomato___Target_Spot": "टमाटर लक्ष्य धब्बा",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "टमाटर पीला पत्ता कर्ल वायरस",
+    "Tomato___Tomato_mosaic_virus": "टमाटर मोज़ेक वायरस",
+    "Tomato___healthy": "स्वस्थ टमाटर"
   }
 }
-  
