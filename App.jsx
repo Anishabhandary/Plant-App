@@ -15,7 +15,7 @@ const App = () => {
         <Stack.Screen
           name="LanguageSelection"
           component={LanguageSelectionScreen} // Language selection screen
-          options={{ headerShown: false }}
+          options={{ headerShown: true, headerTitle:"PlantDoctor" }}
         />
         <Stack.Screen
           name="Tabs" // Navigating to BottomTabNavigator instead of Home

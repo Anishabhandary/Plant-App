@@ -1,5 +1,7 @@
 {
   "translation": {
+    "appLanguage": "भाषा चुनें",
+    "save": "सेव करें",
     "choosePlant": "अपना पौधा चुनें",
     "tomato": "टमाटर",
     "potato": "आलू",

@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../Screen/HomeScreen';
 import CommunityScreen from '../Screen/CommunityScreen';
 import ProfileViewScreen from '../Screen/ProfileViewScreen';
+import SettingsScreen from '../Screen/SettingsScreen';
 import { MaterialIcons } from 'react-native-vector-icons'; // Import icons
 
 const Tab = createBottomTabNavigator();
@@ -41,6 +42,15 @@ const BottomTabNavigator = () => {
         options={{
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="person" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={SettingsScreen} // Add the Settings screen as a new tab
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="settings" color={color} size={size} />
           ),
         }}
       />
