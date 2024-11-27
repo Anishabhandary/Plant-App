@@ -1,3 +1,5 @@
+import i18n from 'i18next';
+
 const sendImageToApi = async (imageUri, selectedPlant) => {
     if (!imageUri) {
       throw new Error('No image selected');
@@ -24,7 +26,7 @@ const sendImageToApi = async (imageUri, selectedPlant) => {
         apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict';
         break;
       default:
-        throw new Error('Invalid plant selected');
+        throw new Error(i18n.t('InvalidPlantSelected'));
     }
   
     try {

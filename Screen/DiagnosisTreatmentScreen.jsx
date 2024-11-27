@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import getTreatmentRecommendation from '../services/treatmentService';
+import { useTranslation } from 'react-i18next'; 
 
 const DiagnosisTreatmentScreen = ({ route }) => {
   const { imageUri, prediction, confidence, selectedPlant } = route.params; // Get image, prediction, and selected plant from navigation props
   const [treatmentRecommendations, setTreatmentRecommendations] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const { t,i18n } = useTranslation()
+
+  const language = i18n.language;
+
   const handleGetTreatmentRecommendation = async () => {
     setIsLoading(true);
     try {
       // Get treatment recommendations and duration
-      const { treatment, duration } = await getTreatmentRecommendation(selectedPlant, prediction);
+      const { treatment, duration } = await getTreatmentRecommendation(selectedPlant, prediction, language);
       setTreatmentRecommendations({ treatment, duration });
       console.log(treatment)
       console.log(duration)
@@ -24,12 +29,12 @@ const DiagnosisTreatmentScreen = ({ route }) => {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.headerText}>Diagnosis and Treatment</Text>
+      <Text style={styles.headerText}>{t('diagnosisAndTreatment')}</Text>
 
       {/* Display the selected image and predicted disease */}
       {imageUri && <Image source={{ uri: imageUri }} style={styles.selectedImage} />}
-      {prediction && <Text style={styles.predictionText}>Predicted Disease: {prediction}</Text>}
-      {confidence && <Text style={styles.predictionText}>Confidence Value: {confidence}</Text>}
+      {prediction && <Text style={styles.predictionText}>{t('predictedDisease')}: {t(prediction)}</Text>}
+      {confidence && <Text style={styles.predictionText}>{t('confidenceValue')}: {confidence}</Text>}
 
        {/* Show a message if confidence is less than 70% */}
        {confidence && confidence < 70 && (
@@ -40,17 +45,17 @@ const DiagnosisTreatmentScreen = ({ route }) => {
 
       {/* Button to fetch treatment recommendation */}
       <TouchableOpacity style={styles.button} onPress={handleGetTreatmentRecommendation} disabled={isLoading}>
-        <Text style={styles.buttonText}>Get Treatment Recommendation</Text>
+        <Text style={styles.buttonText}>{t("getTreatmentRecommendation")}</Text>
       </TouchableOpacity>
 
       {/* Display treatment recommendations */}
       {isLoading && <Text>Loading...</Text>}
       {treatmentRecommendations && (
         <View>
-          <Text style={styles.recommendationHeader}>Recommended Treatments:</Text>
+          <Text style={styles.recommendationHeader}>{t('recommendedTreatments')}:</Text>
           
           {/* Display the duration of the treatment */}
-          <Text style={styles.durationText}>Treatment Duration: {treatmentRecommendations.duration}</Text>
+          <Text style={styles.durationText}>{t('treatmentDuration')}: {treatmentRecommendations.duration}</Text>
 
           {/* Display each treatment step */}
           {treatmentRecommendations.treatment.map((rec, index) => (
@@ -74,6 +79,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
+    lineHeight:40
   },
   selectedImage: {
     width: 200,
@@ -87,6 +93,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
+    lineHeight:30
   },
   button: {
     backgroundColor: '#4CAF50',
@@ -101,11 +108,13 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 16,
+    lineHeight:30
   },
   recommendationHeader: {
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
+    lineHeight:30
   },
   durationText: {
     fontSize: 16,

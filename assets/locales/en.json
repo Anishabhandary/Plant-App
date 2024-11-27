@@ -4,9 +4,9 @@
       "tomato": "Tomato",
       "potato": "Potato",
       "corn": "Corn",
-      "selectImage": "Select from Gallery",
+      "selectFromGallery": "Select from Gallery",
       "takePhoto": "Take Photo",
-      "sendImage": "Send Image to API",
+      "sendImageToApi": "Send Image to API",
       "getTreatmentRecommendation": "Get Treatment Recommendation",
       "predictedDisease": "Predicted Disease",
       "diagnosisAndTreatment": "Diagnosis and Treatment"

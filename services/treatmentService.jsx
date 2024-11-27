@@ -1,6 +1,6 @@
-const getTreatmentRecommendation = async (selectedPlant, predictedDisease) => {
+const getTreatmentRecommendation = async (selectedPlant, predictedDisease, selctedLanguage) => {
     // Dynamically constructing the URL using the selected plant and predicted disease
-    const apiUrl = `https://plantapi-rven.onrender.com/treatment/${selectedPlant}/${predictedDisease}`;
+    const apiUrl = `https://plantapi-rven.onrender.com/treatment/${selectedPlant}/${predictedDisease}?lang=${selctedLanguage}`;
     console.log(apiUrl)
   
     try {

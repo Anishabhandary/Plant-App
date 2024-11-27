@@ -4,9 +4,9 @@
     "tomato": "టమాట",
     "potato": "ఆలూ",
     "corn": "పట్టిన తోట",
-    "selectImage": "గ్యాలరీ నుండి ఎంచుకోండి",
+    "selectFromGallery": "గ్యాలరీ నుండి ఎంచుకోండి",
     "takePhoto": "ఫోటో తీసుకోండి",
-    "sendImage": "APIకి చిత్రాన్ని పంపండి",
+    "sendImageToApi": "APIకి చిత్రాన్ని పంపండి",
     "getTreatmentRecommendation": "చికిత్స సిఫారసు పొందండి",
     "predictedDisease": "భవిష్యత్ వ్యాధి",
     "diagnosisAndTreatment": "రోగ నిర్ధారణ & చికిత్స"

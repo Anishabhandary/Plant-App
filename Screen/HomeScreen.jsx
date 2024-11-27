@@ -39,25 +39,25 @@ const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <Text style={styles.headerText}>{t('choosePlant')}</Text> 
-
+      
       {/* Plant Icons Section */}
       <View style={styles.plantSelector}>
         <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('tomato')}>
           <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
-          <Text style={styles.plantLabel}>Tomato</Text>
+          <Text style={styles.plantLabel}>{t('tomato')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('potato')}>
           <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
-          <Text style={styles.plantLabel}>Potato</Text>
+          <Text style={styles.plantLabel}>{t('potato')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.iconContainer} onPress={() => handlePlantSelect('corn')}>
           <Image source={require('../assets/Images/Tomato.png')} style={styles.plantIcon} />
-          <Text style={styles.plantLabel}>Corn</Text>
+          <Text style={styles.plantLabel}>{t('corn')}</Text>
         </TouchableOpacity>
       </View>
 
       {/* Display selected plant */}
-      {selectedPlant && <Text style={styles.selectedText}>{t('selected')}: {selectedPlant}</Text>} 
+      {selectedPlant && <Text style={styles.selectedText}>{t('selectedPlant')}: {t(selectedPlant)}</Text>} 
 
       {/* Image and Buttons */}
       {imageUri && <Image source={{ uri: imageUri }} style={styles.selectedImage} />}
@@ -94,6 +94,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    lineHeight: 50, // Adjust based on your font size
+    paddingBottom: 5, 
   },
   plantSelector: {
     flexDirection: 'row',
@@ -113,6 +115,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
     fontSize: 16,
     textAlign: 'center',
+    lineHeight:35
   },
   selectedText: {
     marginTop: 20,
