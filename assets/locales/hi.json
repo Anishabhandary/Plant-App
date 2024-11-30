@@ -2,6 +2,11 @@
   "translation": {
     "appLanguage": "भाषा चुनें",
     "save": "सेव करें",
+    "home": "होम",
+    "settings": "सेटिंग्स",
+    "currentLanguage": "वर्तमान चुनी हुई भाषा",
+    "changeLanguage": "भाषा बदलें",
+    "hi": "हिन्दी",
     "choosePlant": "अपना पौधा चुनें",
     "tomato": "टमाटर",
     "potato": "आलू",
@@ -27,6 +32,14 @@
     "Tomato___Target_Spot": "टमाटर लक्ष्य धब्बा",
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "टमाटर पीला पत्ता कर्ल वायरस",
     "Tomato___Tomato_mosaic_virus": "टमाटर मोज़ेक वायरस",
-    "Tomato___healthy": "स्वस्थ टमाटर"
+    "Tomato___healthy": "स्वस्थ टमाटर",
+    "Potato___Early_blight": "आलू प्रारंभिक अंगमारी",
+    "Potato___Late_blight": "आलू देर से आने वाली अंगमारी",
+    "Potato___healthy": "स्वस्थ आलू",
+    "Corn_(maize)___Cercospora_leaf_spot": "मक्का सेरकोस्पोरा पत्ती धब्बा रोग",
+    "Corn_(maize)___Common_rust_": "मक्का सामान्य रस्ट रोग",
+    "Corn_(maize)___Gray_leaf_spot": "मक्का ग्रे लीफ स्पॉट",
+    "Corn_(maize)___Northern_Leaf_Blight": "मक्का उत्तरी पत्ती का झुलसा रोग",
+    "Corn_(maize)___healthy": "स्वस्थ मक्का"
   }
 }

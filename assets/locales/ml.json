@@ -2,6 +2,11 @@
   "translation": {
     "appLanguage": "ഭാഷ തിരഞ്ഞെടുക്കുക",
     "save": "സേവ്",
+    "home": "ഹോം",
+    "settings": "സെറ്റിംഗ്‌സ്",
+    "currentLanguage": "നിലവിലെ തിരഞ്ഞെടുത്ത ഭാഷ",
+    "changeLanguage": "ഭാഷ മാറ്റുക",
+    "ml": "മലയാളം",
     "choosePlant": "താങ്കളുടെ ചെടി തിരഞ്ഞെടുക്കുക",
     "tomato": "തക്കാളി",
     "potato": "ഉരുളക്കിഴങ്ങ്",
@@ -27,6 +32,14 @@
     "Tomato___Target_Spot": "തക്കാളി ലക്ഷ്യം സ്പോട്ട്",
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "തക്കാളി മഞ്ഞ ഇല കർൾ വൈറസ്",
     "Tomato___Tomato_mosaic_virus": "തക്കാളി മൊസൈക് വൈറസ്",
-    "Tomato___healthy": "ആരോഗ്യകരമായ തക്കാളി"
+    "Tomato___healthy": "ആരോഗ്യകരമായ തക്കാളി",
+    "Potato___Early_blight": "ഉരുളക്കിഴങ്ങ് നേരത്തെ കുമിൾ അഴുകൽ",
+    "Potato___Late_blight": "ഉരുളക്കിഴങ്ങ് പിന്നീടുള്ള കുമിൾ അഴുകൽ",
+    "Potato___healthy": "ആരോഗ്യകരമായ ഉരുളക്കിഴങ്ങ്",
+    "Corn_(maize)___Cercospora_leaf_spot": "വൈക്കോൽ സെർകോസ്പോറ ഇലക്കുരുന്ന്",
+    "Corn_(maize)___Common_rust_": "വൈക്കോൽ സാധാരണ റസ്റ്റ് രോഗം",
+    "Corn_(maize)___Gray_leaf_spot": "വൈക്കോൽ ഗ്രേ ലീഫ് സ്പോട്ട്",
+    "Corn_(maize)___Northern_Leaf_Blight": "വൈക്കോൽ ಉತ್ತര ഭാഗത്തെ ഇലക്കൊഴിച്ചിൽ",
+    "Corn_(maize)___healthy": "ആരോഗ്യകരമായ വൈക്കോൽ"
   }
 }

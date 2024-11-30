@@ -2,10 +2,16 @@
   "translation":{
       "appLanguage": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
       "save": "ಸೇವ್",
+      "home":"ಹೋಮ್",
+      "settings":"ಸೆಟ್ಟಿಂಗ್ಸ್",
+      "currentLanguage":"ಪ್ರಸ್ತುತ ಆಯ್ಕೆಮಾಡಿದ ಭಾಷೆ",
+      "changeLanguage":"ಭಾಷೆಯನ್ನು ಬದಲಾಯಿಸಿ",
+      "kn":"ಕನ್ನಡ",
       "choosePlant": "ನಿಮ್ಮ ಸಸ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
       "tomato": "ಟಮಾಟೋ",
       "potato": "ಆಲೂಗಡ್ಡೆ",
       "corn": "ಮಕ್ಕಾ",
+      
       "selectFromGallery": "ಗ್ಯಾಲರಿ‌ನಿಂದ ಆಯ್ಕೆಮಾಡಿ",
       "takePhoto": "ಚಿತ್ರವನ್ನು ತೆಗೆಯಿರಿ",
       "sendImageToApi": "APIಗೆ ಚಿತ್ರವನ್ನು ಕಳುಹಿಸಿ",
@@ -18,6 +24,7 @@
       "recommendedTreatments":"ಸೂಚಿತ ಚಿಕಿತ್ಸೆಗಳು",
       "treatmentDuration":"ಚಿಕಿತ್ಸೆಯ ಅವಧಿ",
       "failedToGetTreatmentRecommendation":"ಚಿಕಿತ್ಸಾ ಸಲಹೆಗಳನ್ನು ತೋರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ",
+
       "Tomato___Bacterial_spot": "ಟೊಮ್ಯಾಟೊ ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಸ್ಪಾಟ್",
       "Tomato___Early_blight": "ಟೊಮ್ಯಾಟೊ ಆರಂಭಿಕ ಬ್ಲೈಟ್",
       "Tomato___Late_blight": "ಟೊಮ್ಯಾಟೊ ತಡವಾದ ಬ್ಲೈಟ್",
@@ -27,6 +34,16 @@
       "Tomato___Target_Spot": "ಟೊಮ್ಯಾಟೊ ಗುರಿ ಕಲೆ",
       "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "ಟೊಮ್ಯಾಟೊ ಹಳದಿ ಎಲೆ ಕರ್ಲ್ ವೈರಸ್",
       "Tomato___Tomato_mosaic_virus": "ಟೊಮ್ಯಾಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್",
-      "Tomato___healthy": "ಆರೋಗ್ಯಕರ ಟೊಮ್ಯಾಟೊ"
+      "Tomato___healthy": "ಆರೋಗ್ಯಕರ ಟೊಮ್ಯಾಟೊ",
+
+      "Potato___Early_blight": "ಆಲೂಗಡ್ಡೆ ಮುಂಚಿನ ಕೊಳೆರೋಗ",
+      "Potato___Late_blight": "ಆಲೂಗಡ್ಡೆ ತಡವಾದ ಕೊಳೆರೋಗ",
+      "Potato___healthy": "ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ",
+
+      "Corn_(maize)___Cercospora_leaf_spot": "ಜೋಳದ ಸೆರ್ಕೋಸ್ಪೋರಾ ಎಲೆ ಕಲೆ ರೋಗ",
+      "Corn_(maize)___Common_rust_": "ಜೋಳದ ಸಾಮಾನ್ಯ ರಸ್ಟ್ ರೋಗ",
+      "Corn_(maize)___Gray_leaf_spot": "ಜೋಳದ ಬೂದು ಎಲೆ ಕಲೆ ರೋಗ",
+      "Corn_(maize)___Northern_Leaf_Blight": "ಜೋಳದ ಉತ್ತರ ಭಾಗದ ಎಲೆ ಕೊಳೆ ರೋಗ",
+      "Corn_(maize)___healthy": "ಆರೋಗ್ಯಕರ ಜೋಳ"
     }
 }

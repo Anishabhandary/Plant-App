@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, Alert, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, Image, Alert, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import useImagePicker from '../hooks/useImagePicker';
 import sendImageToApi from '../services/apiService';
 import { useTranslation } from 'react-i18next'; // Import i18next hook
@@ -10,11 +10,14 @@ const HomeScreen = ({ navigation }) => {
   const [selectedPlant, setSelectedPlant] = useState(null);
   const [prediction, setPrediction] = useState(null);
   const [confidence, setConfidence] = useState(null);
-
-  console.log("Home Screen Language",i18n.language);//not needed
-  console.log("HomeScreen", t('corn'))
+  const [loading, setLoading] = useState(false); // New loading state
 
   const handleSendImage = async () => {
+    if (!imageUri || !selectedPlant) {
+      Alert.alert('Error', t('pleaseSelectPlantAndImage'));
+      return;
+    }
+    setLoading(true); // Start loading
     try {
       const { prediction, confidence } = await sendImageToApi(imageUri, selectedPlant);
       setPrediction(prediction);
@@ -29,6 +32,8 @@ const HomeScreen = ({ navigation }) => {
       });
     } catch (error) {
       Alert.alert('Error', error.message);
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -71,8 +76,13 @@ const HomeScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={handleSendImage}>
-        <Text style={styles.buttonText}>{t('sendImageToApi')}</Text> 
+      {/* Loader & Send Image Button */}
+      <TouchableOpacity style={[styles.button, loading && styles.disabledButton]} onPress={handleSendImage} disabled={loading}>
+        {loading ? (
+          <ActivityIndicator size="small" color="#fff" />
+        ) : (
+          <Text style={styles.buttonText}>{t('sendImageToApi')}</Text>
+        )}
       </TouchableOpacity>
 
       {/* Prediction and Confidence */}
@@ -148,6 +158,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
   },
+  disabledButton: {
+    backgroundColor: '#A9A9A9', // Grey color for disabled state
+  }
 });
 
 export default HomeScreen;

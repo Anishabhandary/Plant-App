@@ -2,6 +2,11 @@
   "translation": {
     "appLanguage": "భాషను ఎంచుకోండి",
     "save": "సేవ్",
+    "home": "హోమ్",
+    "settings": "సెట్టింగ్స్",
+    "currentLanguage": "ప్రస్తుతం ఎంచుకున్న భాష",
+    "changeLanguage": "భాషను మార్చండి",
+    "te": "తెలుగు",
     "choosePlant": "మీ మొక్కను ఎంచుకోండి",
     "tomato": "టమోటా",
     "potato": "బంగాళాదుంప",
@@ -27,6 +32,14 @@
     "Tomato___Target_Spot": "టమాటో టార్గెట్ స్పాట్",
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "టమాటో పసుపు ఆకుల కర్ల్ వైరస్",
     "Tomato___Tomato_mosaic_virus": "టమాటో మోసాయిక్ వైరస్",
-    "Tomato___healthy": "ఆరోగ్యకరమైన టమాటో"
+    "Tomato___healthy": "ఆరోగ్యకరమైన టమాటో",
+    "Potato___Early_blight": "బంగాళా దుంప ప్రారంభ కుంభకోణం",
+    "Potato___Late_blight": "బంగాళా దుంప తరువాతి కుంభకోణం",
+    "Potato___healthy": "ఆరోగ్యవంతమైన బంగాళా దుంప",
+    "Corn_(maize)___Cercospora_leaf_spot": "మొక్కజొన్న సెర్కోస్పోరా ఆకు మచ్చ",
+    "Corn_(maize)___Common_rust_": "మొక్కజొన్న సాధారణ తుప్పు",
+    "Corn_(maize)___Gray_leaf_spot": "మొక్కజొన్న బూడిద ఆకు మచ్చ",
+    "Corn_(maize)___Northern_Leaf_Blight": "మొక్కజొన్న ఉత్తర భాగపు ఆకు కుళ్ళిపోవడం",
+    "Corn_(maize)___healthy": "ఆరోగ్యవంతమైన మొక్కజొన్న"
   }
 }

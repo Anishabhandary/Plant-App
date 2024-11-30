@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import * as SecureStore from 'expo-secure-store'; // Import SecureStore
 
 const LanguageSelectionScreen = ({ navigation }) => {
   const { t, i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
+  // Define the list of languages
   const languages = [
     { code: 'kn', label: 'ಕನ್ನಡ' },
     { code: 'hi', label: 'हिन्दी' },
@@ -14,28 +16,39 @@ const LanguageSelectionScreen = ({ navigation }) => {
     { code: 'te', label: 'తెలుగు' },
   ];
 
-  const changeLanguage = (language) => {
+  // Load language from SecureStore when component mounts
+  useEffect(() => {
+    const loadLanguage = async () => {
+      const savedLanguage = await SecureStore.getItemAsync('userLanguage');
+      if (savedLanguage) {
+        i18n.changeLanguage(savedLanguage);
+        setSelectedLanguage(savedLanguage);
+      }
+    };
+    loadLanguage();
+  }, []); // Run once when the component mounts
+
+  // Change language function
+  const changeLanguage = async (language) => {
     setSelectedLanguage(language);
     i18n.changeLanguage(language);
+    await SecureStore.setItemAsync('userLanguage', language); // Save language to SecureStore
   };
 
+  // Navigate to Home (or Tabs) after saving the language preference
   const handleSave = () => {
     navigation.navigate('Tabs'); // Navigate to Tabs after saving
   };
 
   return (
     <View style={styles.container}>
-
       <Text style={styles.header}>{t('appLanguage')}</Text>
       <FlatList
         data={languages}
         keyExtractor={(item) => item.code}
         renderItem={({ item }) => (
           <TouchableOpacity
-            style={[
-              styles.languageOption,
-              selectedLanguage === item.code && styles.selectedOption,
-            ]}
+            style={[styles.languageOption, selectedLanguage === item.code && styles.selectedOption]}
             onPress={() => changeLanguage(item.code)}
           >
             <Text style={styles.languageText}>{item.label}</Text>
@@ -86,6 +99,7 @@ const styles = StyleSheet.create({
     color: '#4CAF50',
     fontWeight: 'bold',
   },
+
   saveButton: {
     marginTop: 20,
     backgroundColor: '#4CAF50',

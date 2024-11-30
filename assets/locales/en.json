@@ -2,6 +2,11 @@
   "translation": {
     "appLanguage":"Choose Language",
     "save":"Save",
+    "home": "Home",
+    "settings": "Settings",
+    "currentLanguage": "Current Selected Language",
+    "changeLanguage": "Change Language",
+    "en": "English",
     "choosePlant": "Choose your plant",
     "tomato": "Tomato",
     "potato": "Potato",
@@ -27,6 +32,14 @@
     "Tomato___Target_Spot": "Tomato Target Spot",
     "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "Tomato Yellow Leaf Curl Virus",
     "Tomato___Tomato_mosaic_virus": "Tomato Mosaic Virus",
-    "Tomato___healthy": "Healthy Tomato"
+    "Tomato___healthy": "Healthy Tomato",
+    "Potato___Early_blight": "Potato Early Blight",
+    "Potato___Late_blight": "Potato Late Blight",
+    "Potato___healthy": "Healthy Potato",
+    "Corn_(maize)___Cercospora_leaf_spot": "Corn (maize) Cercospora Leaf Spot",
+    "Corn_(maize)___Common_rust_": "Corn (maize) Common Rust",
+    "Corn_(maize)___Gray_leaf_spot": "Corn (maize) Gray Leaf Spot",
+    "Corn_(maize)___Northern_Leaf_Blight": "Corn (maize) Northern Leaf Blight",
+    "Corn_(maize)___healthy": "Healthy Corn (maize)"
   }
 }

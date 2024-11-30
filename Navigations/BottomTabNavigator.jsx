@@ -5,10 +5,12 @@ import CommunityScreen from '../Screen/CommunityScreen';
 import ProfileViewScreen from '../Screen/ProfileViewScreen';
 import SettingsScreen from '../Screen/SettingsScreen';
 import { MaterialIcons } from 'react-native-vector-icons'; // Import icons
+import { useTranslation } from 'react-i18next';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = () => {
+  const { t } = useTranslation();
   return (
     <Tab.Navigator
       screenOptions={{
@@ -19,7 +21,7 @@ const BottomTabNavigator = () => {
       }}
     >
       <Tab.Screen
-        name="Home"
+        name={t('home')}
         component={HomeScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -46,7 +48,7 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Settings"
+        name={t("settings")}
         component={SettingsScreen} // Add the Settings screen as a new tab
         options={{
           tabBarIcon: ({ color, size }) => (
