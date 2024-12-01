@@ -12,6 +12,7 @@ const Stack = createStackNavigator();
 const App = () => {
   const [isLanguageSet, setIsLanguageSet] = useState(false);
 
+  console.log("isLanguageSet : ",isLanguageSet)
   useEffect(() => {
     const checkLanguagePreference = async () => {
       const savedLanguage = await SecureStore.getItemAsync('userLanguage');

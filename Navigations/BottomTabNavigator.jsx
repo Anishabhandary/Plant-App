@@ -29,7 +29,7 @@ const BottomTabNavigator = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Community"
         component={CommunityScreen}
         options={{
@@ -46,7 +46,7 @@ const BottomTabNavigator = () => {
             <MaterialIcons name="person" color={color} size={size} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name={t("settings")}
         component={SettingsScreen} // Add the Settings screen as a new tab

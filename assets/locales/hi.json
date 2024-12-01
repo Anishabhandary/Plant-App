@@ -40,6 +40,7 @@
     "Corn_(maize)___Common_rust_": "मक्का सामान्य रस्ट रोग",
     "Corn_(maize)___Gray_leaf_spot": "मक्का ग्रे लीफ स्पॉट",
     "Corn_(maize)___Northern_Leaf_Blight": "मक्का उत्तरी पत्ती का झुलसा रोग",
-    "Corn_(maize)___healthy": "स्वस्थ मक्का"
+    "Corn_(maize)___healthy": "स्वस्थ मक्का",
+    "lowConfidenceInstructions": "अच्छी रोशनी, फोकस, स्पष्टता और साफ पृष्ठभूमि सुनिश्चित करें।"
   }
 }

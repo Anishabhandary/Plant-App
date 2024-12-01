@@ -40,6 +40,7 @@
     "Corn_(maize)___Common_rust_": "Corn (maize) Common Rust",
     "Corn_(maize)___Gray_leaf_spot": "Corn (maize) Gray Leaf Spot",
     "Corn_(maize)___Northern_Leaf_Blight": "Corn (maize) Northern Leaf Blight",
-    "Corn_(maize)___healthy": "Healthy Corn (maize)"
+    "Corn_(maize)___healthy": "Healthy Corn (maize)",
+    "lowConfidenceInstructions" : "Ensure good lighting, focus, clarity, and a clean background."  
   }
 }

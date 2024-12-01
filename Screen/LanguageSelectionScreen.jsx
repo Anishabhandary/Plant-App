@@ -7,6 +7,8 @@ const LanguageSelectionScreen = ({ navigation }) => {
   const { t, i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
+  console.log("selectedLanguage",selectedLanguage)
+
   // Define the list of languages
   const languages = [
     { code: 'kn', label: 'ಕನ್ನಡ' },

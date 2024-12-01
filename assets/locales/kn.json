@@ -44,6 +44,8 @@
       "Corn_(maize)___Common_rust_": "ಜೋಳದ ಸಾಮಾನ್ಯ ರಸ್ಟ್ ರೋಗ",
       "Corn_(maize)___Gray_leaf_spot": "ಜೋಳದ ಬೂದು ಎಲೆ ಕಲೆ ರೋಗ",
       "Corn_(maize)___Northern_Leaf_Blight": "ಜೋಳದ ಉತ್ತರ ಭಾಗದ ಎಲೆ ಕೊಳೆ ರೋಗ",
-      "Corn_(maize)___healthy": "ಆರೋಗ್ಯಕರ ಜೋಳ"
+      "Corn_(maize)___healthy": "ಆರೋಗ್ಯಕರ ಜೋಳ",
+
+      "lowConfidenceInstructions": "ಉತ್ತಮ ಬೆಳಕು, ಗಮನ, ಸ್ಪಷ್ಟತೆ, ಮತ್ತು ಶುದ್ಧ ಹಿನ್ನಲೆ ಇದ್ದದ್ದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
     }
 }
