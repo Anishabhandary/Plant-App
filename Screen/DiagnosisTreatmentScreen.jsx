@@ -9,7 +9,6 @@ const DiagnosisTreatmentScreen = ({ route }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const { t, i18n } = useTranslation();
-
   const language = i18n.language;
 
   const handleGetTreatmentRecommendation = async () => {
@@ -25,7 +24,7 @@ const DiagnosisTreatmentScreen = ({ route }) => {
   };
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: 30 }}>
       <Text style={styles.headerText}>{t('diagnosisAndTreatment')}</Text>
 
       {/* Display the selected image */}
@@ -33,9 +32,12 @@ const DiagnosisTreatmentScreen = ({ route }) => {
 
       {/* Display instructions if confidence is less than 80 */}
       {confidence && confidence < 80 ? (
-        <Text style={styles.warningText}>
-          {t('lowConfidenceInstructions')} {/* Instruction text for low confidence */}
-        </Text>
+        <>
+          <Text style={styles.diseaseFailedText}>{t('diseaseDetectionFailed')}</Text>
+          <Text style={styles.instructions}>
+            {t('lowConfidenceInstructions')} {/* Instruction text for low confidence */}
+          </Text>
+        </>
       ) : (
         <>
           {/* Display predicted disease and confidence value if confidence >= 80 */}
@@ -124,12 +126,21 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     lineHeight: 30,
   },
-  warningText: {
-    fontSize: 18,
-    color: 'red',
+  diseaseFailedText: {
+    fontSize: 23,
+    color: '#f44336', // Red color for failure message
+    fontWeight: 'bold',
     textAlign: 'center',
-    marginVertical: 20,
-    lineHeight: 30,
+    marginBottom: 10,
+    lineHeight: 50,
+  },
+  instructions: {
+    fontSize: 17,
+    color: '#555', // Dark grey for readability
+    textAlign: 'center',
+    lineHeight: 20, // Adds spacing between lines for better clarity
+    marginBottom: 20,
+    lineHeight: 25,
   },
 });
 

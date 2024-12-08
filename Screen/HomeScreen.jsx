@@ -14,7 +14,7 @@ const HomeScreen = ({ navigation }) => {
 
   const handleSendImage = async () => {
     if (!imageUri || !selectedPlant) {
-      Alert.alert('Error', t('pleaseSelectPlantAndImage'));
+      Alert.alert('Error', t('InvalidPlantSelected'));
       return;
     }
     setLoading(true); // Start loading
