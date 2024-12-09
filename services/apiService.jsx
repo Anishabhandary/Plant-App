@@ -1,4 +1,5 @@
 import i18n from 'i18next';
+import { TOMATO_API_URL, POTATO_API_URL, CORN_API_URL } from '@env';
 
 const sendImageToApi = async (imageUri, selectedPlant) => {
     if (!imageUri) {
@@ -17,13 +18,13 @@ const sendImageToApi = async (imageUri, selectedPlant) => {
     // Use a different API URL depending on the selected plant
     switch (selectedPlant) {
       case 'tomato':
-        apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict_tomato';
+        apiUrl = TOMATO_API_URL;
         break;
       case 'potato':
-        apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict_potato';
+        apiUrl = POTATO_API_URL;
         break;
       case 'corn':
-        apiUrl = 'https://asia-south1-carbon-aquifer-439615-g0.cloudfunctions.net/predict_corn';
+        apiUrl = CORN_API_URL;
         break;
       default:
         throw new Error(i18n.t('InvalidPlantSelected'));
