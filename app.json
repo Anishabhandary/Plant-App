@@ -4,7 +4,7 @@
     "slug": "plantdoctor",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Images/applogo.webp",
+    "icon": "./assets/Images/leaf_logo1.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
